@@ -18,7 +18,7 @@ const Details = () => {
         const newData = { ...data, status: "pending" }
 
         reset();
-        axios.post('http://localhost:5000/orders', newData)
+        axios.post('https://radiant-mesa-42940.herokuapp.com/orders', newData)
             .then(res => {
 
                 console.log(newData);
@@ -36,7 +36,7 @@ const Details = () => {
     const [camera, setCamera] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/cameras/${cameraid}`)
+        fetch(`https://radiant-mesa-42940.herokuapp.com/cameras/${cameraid}`)
             .then(res => res.json())
             .then(data => setCamera(data));
         reset();

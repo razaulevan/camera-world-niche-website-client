@@ -17,7 +17,7 @@ const ExploreProducts = ({ product }) => {
                     <div className="p-2">
                         <h2> {name}</h2>
                         <p>{description.slice(0, 200)}</p>
-                        <h3> Cost: {cost} BDT</h3>
+                        <h3> Price: $ {cost} </h3>
                         <Link to={`/details/${_id}`}><button className="btn btn-primary">Buy Now</button></Link>
                     </div>
 

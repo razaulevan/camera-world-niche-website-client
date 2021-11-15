@@ -1,6 +1,7 @@
 .acc{
-    box-shadow: 5px 5px 5px 5px rgb(216, 211, 211);
-    background-color: rgb(233, 233, 233);
+    box-shadow: 5px 5px 5px 5px rgb(103, 106, 103);
+    background-color: rgb(255, 255, 255);
+    column-gap: 5px;
   
     }
 .img-acc img{

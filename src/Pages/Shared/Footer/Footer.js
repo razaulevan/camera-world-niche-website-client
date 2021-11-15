@@ -8,7 +8,7 @@ const Footer = () => {
 
                 <div className="row w-75 p-3 mx-auto footer-detaill">
                     <div className=" pt-3 ps-3 pe-3  col-lg-5 col-md-5 col-12 col-sm-12">
-                        <h3 className=""> @Hello Trekkers</h3>
+                        <h3 className=""> © 2021 GoPro Inc. All rights reserved.</h3>
 
 
 
@@ -21,7 +21,7 @@ const Footer = () => {
 
                     <div className=" p-3 col-lg-4 col-md-4 col-12 col-sm-12">
                         <h3>ANY QUERY?</h3>
-                        <p>Email: info@hellotrekkerrs.com</p>
+                        <p>Email: info@cameraworld.com</p>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ const AddProducts = () => {
         console.log(data);
         reset();
 
-        axios.post(`http://localhost:5000/cameras`, data)
+        axios.post(`https://radiant-mesa-42940.herokuapp.com/cameras`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Service Added Successfully')

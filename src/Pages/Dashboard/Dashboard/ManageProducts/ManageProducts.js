@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 const ManageProducts = () => {
     const [cameraProduct, setCameraProduct] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/cameras')
+        fetch('https://radiant-mesa-42940.herokuapp.com/cameras')
             .then(res => res.json())
             .then(data => setCameraProduct(data))
 
     }, []);
     const handleDelete = id => {
-        const url = `http://localhost:5000/cameras/${id}`;
+        const url = `https://radiant-mesa-42940.herokuapp.com/cameras/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

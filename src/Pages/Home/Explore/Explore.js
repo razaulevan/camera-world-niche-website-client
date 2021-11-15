@@ -5,7 +5,7 @@ import ExploreProducts from '../ExploreProducts/ExploreProducts';
 const Explore = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/cameras`)
+        fetch(`https://radiant-mesa-42940.herokuapp.com/cameras`)
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])

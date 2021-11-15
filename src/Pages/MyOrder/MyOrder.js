@@ -13,13 +13,13 @@ const MyOrder = () => {
     const { user } = useAuth();
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/orders?email=${user.email}`)
+        fetch(`https://radiant-mesa-42940.herokuapp.com/orders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setMyOrder(data));
 
     }, [])
     const handleDelete = id => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://radiant-mesa-42940.herokuapp.com/orders/${id}`, {
 
             method: 'DELETE'
         })

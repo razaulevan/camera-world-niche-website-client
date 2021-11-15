@@ -14,7 +14,7 @@ const Reviews = () => {
     const handleSubmit = (e) => {
         const newReview = { name: user.displayName, email: user.email, review, value }
         console.log(newReview);
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://radiant-mesa-42940.herokuapp.com/reviews', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
