@@ -1,0 +1,9 @@
+.acc{
+    box-shadow: 5px 5px 5px 5px rgb(216, 211, 211);
+    background-color: rgb(233, 233, 233);
+  
+    }
+.img-acc img{
+        width: 100%;
+        height: 300px;
+    }
